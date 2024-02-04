@@ -26,7 +26,7 @@ export async function cat(path) {
 
     await new Promise((resolve, reject) => {
         readable.on('end', () => resolve());
-        readable.on('error', () => reject());
+        readable.on('error', (e) => reject(e));
     });
 }
 

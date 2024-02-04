@@ -8,7 +8,7 @@ export async function hash(path) {
 
     await new Promise((resolve, reject) => {
         readable.on('end', () => resolve());
-        readable.on('error', () => reject());
+        readable.on('error', (e) => reject(e));
     });
 
     console.log(`Hash of ${path} is: ${hash.digest('hex')}`);

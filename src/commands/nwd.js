@@ -1,6 +1,6 @@
 import fs from 'fs/promises';
 
-import { checkIsNotFile } from '../helpers.js';
+import { checkIsNotFile } from '../utils/index.js';
 
 export async function cd(path) {
     await checkIsNotFile(path);

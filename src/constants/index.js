@@ -5,7 +5,7 @@ export const MSGS = {
 };
 
 export const ERROR_MSGS = {
-    FILE_DOESNT_EXIST: `File doesn't exist`,
-    FILE_EXISTS: `File exists`,
+    FILE_FOLDER_DOESNT_EXIST: `File or folder doesn't exist`,
+    FILE_EXISTS: `File is already exists`,
     IS_FILE: `Is File`,
 };

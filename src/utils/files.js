@@ -16,7 +16,7 @@ export async function checkThatExist(path) {
     try {
         return await fs.stat(path);
     } catch {
-        throw new Error(ERROR_MSGS.FILE_DOESNT_EXIST);
+        throw new Error(ERROR_MSGS.FILE_FOLDER_DOESNT_EXIST);
     }
 }
 
