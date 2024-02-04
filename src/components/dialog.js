@@ -1,3 +1,5 @@
+import { createInterface } from 'readline/promises';
+
 import { getUsername } from '../utils/index.js';
 
 function greeting(username) {
@@ -13,4 +15,9 @@ export function createDialog() {
 
     greeting(username);
     process.on('exit', () => goodbye(username));
+
+    return createInterface({
+        input: process.stdin,
+        output: process.stdout,
+    });
 }
