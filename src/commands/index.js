@@ -48,8 +48,6 @@ const commands = {
         const dir = getDirFromPath(oldPath);
         const newPath = resolve(dir, dest);
 
-        console.log('oldPath', oldPath);
-        console.log('newPath', newPath);
         await files.rn(oldPath, newPath);
     },
     async cp([current, src, dest]) {
