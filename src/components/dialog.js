@@ -1,12 +1,11 @@
-import { MSGS } from '../constants/index.js';
 import { getUsername } from '../utils/index.js';
 
 function greeting(username) {
-    console.log(`${MSGS.WELCOME}, ${username}!`);
+    console.log(`Welcome to the File Manager, ${username}!`);
 }
 
 function goodbye(username) {
-    console.log(`${MSGS.THANK_YOU}, ${username}, ${MSGS.GOODBYE}!`);
+    console.log(`Thank you for using File Manager, ${username}, goodbye!`);
 }
 
 export function createDialog() {
